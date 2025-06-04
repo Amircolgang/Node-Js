@@ -16,7 +16,10 @@ const server = http.createServer((req, res) => {
     }else if (req.method == "GET" && req.url == "/users") {
         res.write("Welcom To Users :)")
         res.end()
+    }else{
+        res.write(`Mehod : ${req.url}`)
     }
+    console.log(req.method)
 });
 
 server.listen(3000, () => {
