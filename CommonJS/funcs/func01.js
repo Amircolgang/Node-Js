@@ -7,5 +7,9 @@ let userCheck = (userName) => {
     }
 }   
 
+let num = 16
 
-module.exports.userCheck = userCheck
+module.exports = {
+    num , 
+    userCheck
+}
