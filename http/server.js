@@ -6,7 +6,12 @@ const server = http.createServer((req, res) => {
         res.write("Welcom To Home :)")
         res.end()
     } else if (req.method == "GET" && req.url == "/posts") {
-        res.write("Welcom To Posts :)")
+        res.writeHead(200 , {"Content-Type" : "application/json"})
+        res.write(JSON.stringify([
+            {id : 1 , title : "Amir"},
+            {id : 2 , title : "Reza"},
+            {id : 3 , title : "Parham"},
+        ]))
         res.end()
     }else if (req.method == "GET" && req.url == "/users") {
         res.write("Welcom To Users :)")
