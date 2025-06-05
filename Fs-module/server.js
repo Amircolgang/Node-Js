@@ -8,3 +8,10 @@ const fs = require('fs')
 //         `Your Readed File Is : \n ${data}`
 //     )
 // })
+
+fs.readFile('users.json' , (err , data)=> {
+    if(err){
+        throw err
+    }
+    console.log(JSON.parse(data))
+})
