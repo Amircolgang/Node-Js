@@ -1,0 +1,18 @@
+{
+    "user": [
+        {"id" : 1, "title" : "user", "name" : "reza"
+        },
+        {"id" : 2, "title" : "user", "name" : "amin"
+        }, 
+        {"id" : 3, "title" : "user", "name" : "mostafa"
+        }
+    ],
+    "admin": [
+        {"id" : 1, "title" : "admin", "name" : "amir"
+        },
+        {"id" : 2, "title" : "admin", "name" : "parham"
+        },
+        {"id" : 3, "title" : "admin", "name" : "javad"
+        }
+    ]
+}
